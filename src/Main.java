@@ -30,12 +30,11 @@ public class Main {
                 String resposta = scanner.next();
                 while (resposta.equals("Não")) {
                     System.out.println("Qual valor gostaria de depositar?");
-                    double valorDeposito = scanner.nextDouble();
-                    if (valorDeposito >= 0) {
+                    deposito = scanner.nextDouble();
+                    if (deposito >= 0) {
                         System.out.println("Tem certeza que deseja depositar esse valor? Sim/Não.");
-                        String resposta2 = scanner.next();
-                        resposta = resposta2;
-                        deposito = valorDeposito;
+                        resposta = scanner.next();
+
                     } else {
                         System.out.println("Valor inválido, tente novamente");
                     }
